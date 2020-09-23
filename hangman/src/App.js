@@ -6,6 +6,7 @@ import Paragraph from './paragraph/Para';
 import Word from './word/Word';
 import AppButton from './buttons/Button';
 class App extends React.Component {
+    
   state = {
     word:[],
     hint: "",
@@ -96,7 +97,9 @@ class App extends React.Component {
       hintShow:"",
       checkedletter:[],
       mistake : 0
+       
     })
+    this.forceUpdate();
   }
   hintFun =() =>{
     this.setState({
@@ -105,6 +108,7 @@ class App extends React.Component {
   }
 
   
+  
   render(){
     console.log(this.state);
     return (
@@ -112,7 +116,7 @@ class App extends React.Component {
         <h1 className="header">HANG MAN</h1>
          <Paragraph text={"VANILA JAVA SCRIPT HANG MAN"} />
          <Paragraph text={"use the alphabet below to guss the word .or click hint to get clue"} />
-        <AlphabetContainer onclick={this.onClickHandler}/>
+        <AlphabetContainer  onclick={this.onClickHandler}/>
         <Paragraph text={this.state.hintShow} />
         <Word letters={this.state.word} checkedletter={this.state.checkedletter}/>
         <Image mistake={this.state.mistake} />
