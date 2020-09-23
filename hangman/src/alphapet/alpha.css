@@ -4,18 +4,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .btn{
     flex-basis: 16px;
-    padding: 8px;
+    padding: 14px;
+    border: none;
     margin: 8px 8px;
-    background-color:rgb(85, 81, 81);
+    background-color:#555551;
     color:rgb(252, 252, 252);
 }
 
 .btn:link ,
 .btn:hover {
-    background-color: rgb(70, 69, 69);
+    background-color: rgb(82, 79, 79);
     color:rgb(252, 252, 252);
 }

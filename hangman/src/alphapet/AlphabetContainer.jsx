@@ -2,7 +2,7 @@ import React from 'react';
 import Alphapet from './Alphapet';
 import './alpha.css';
 
-function AlphabetContainer() {
+function AlphabetContainer({onclick}) {
     let alpha = [
         "a",
         "b",
@@ -35,7 +35,7 @@ function AlphabetContainer() {
   return (
     <div className="letter">
      {alpha.map((ele) => {
-        return  <Alphapet  key={ele} letter={ele} />
+        return  <Alphapet  key={ele} onclick={onclick} letter={ele} />
      })}
     </div>
   );
