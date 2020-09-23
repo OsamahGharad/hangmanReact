@@ -1,12 +1,11 @@
-import React ,{useState}from 'react';
+import React from 'react';
 import './alpha.css';
 
 function Alphapet({letter ,onclick}) {
-  let[checkvalue ,setCheck]=useState(false)
 
   return (
-    <button disabled={checkvalue} className="btn" onClick={() =>{
-      setCheck(true)
+    <button  className="btn" onClick={() =>{
+      
       onclick(letter)
     } }>{letter}</button>
   );
