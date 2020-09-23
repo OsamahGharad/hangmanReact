@@ -80,7 +80,7 @@ class App extends React.Component {
         })
         if(numberOfMis===10){
           this.setState({
-            hintShow:"Try another"
+            hintShow:"Lose, play again "
           })
         }
        }
